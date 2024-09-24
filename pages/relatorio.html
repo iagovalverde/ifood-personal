@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatorio</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/relatorio.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar navbar-expand-lg menu">
+                <div class="container-fluid area-menu">
+                    <button class="navbar-toggler custem-text" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img class="logo-img" src="../assets/images/logo-ifood.svg" alt="">
+                    </a>
+                    <div class="navbar-collapse collapse" id="menu">
+                        <ul class="navbar-nav custem-text">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/dashboard.html">Dashboard</a>
+                            </li>
+                            <li class="nav-item d-none d-lg-block">
+                                <a class="nav-link" href="../pages/receita.html">Receitas</a>
+                            </li>
+                            <li class="nav-item d-none d-lg-block">
+                                <a class="nav-link" href="../pages/despesas.html">Despesas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/extrato.html">Extrato</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/relatorio.html">Relatório</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/calendario.html">Calendário</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/conversas.html">Conversas</a>
+                            </li>
+                            <li class="nav-item"></li>
+                                <a class="nav-link" href="../index.html">Sair</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="header-main">
+                <strong>
+                    <p class="text-center h1">RELATÓRIOS</p>
+                </strong>
+            </div>
+            <section class="area-imagem">
+                <h2 class="faturamento">Faturamento mensal</h2>
+                <img class="my-5" src="../assets/images/faturamento.svg" alt="Grafico">
+                <h2 class="cupom">Vendas</h2>
+                <img class="mt-1 mb-5" src="../assets/images/cupom.svg" alt="Grafico">
+                <h2 class="faturamento">Produtos mais comercializados por horário</h2>
+                <div class="dropdown area-filtro">
+                    <a class="btn dropdown-toggle fundo-filtro" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img class="img-filtro" src="../assets/icons/filtro-icon.svg" alt="imagem filtro">
+                        Filtrar
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#" data-img="manha">Manhã</a></li>
+                        <li><a class="dropdown-item" href="#" data-img="tarde">Tarde</a></li>
+                        <li><a class="dropdown-item" href="#" data-img="noite">Noite</a></li>
+                    </ul>
+                    <img id="img-manha" class="my-5" src="../assets/images/mais-vendido-manha.svg" alt="Grafico">
+                    <img id="img-tarde" class="my-5 d-none" src="../assets/images/mais-vendido-tarde.svg" alt="Grafico">
+                    <img id="img-noite" class="my-5 d-none" src="../assets/images/mais-vendido-noite.svg" alt="Grafico">
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Todos os direitos reservados</p>
+        </footer>
+    </div>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../scripts/relatorio.js"></script>
+</body>
+</html>
